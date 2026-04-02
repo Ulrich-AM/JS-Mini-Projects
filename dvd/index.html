@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>dvd</title>
+  </head>
+  <body>
+    <label for="xVelAdjust" style="color: white">adjust x velocity</label>
+    <input
+      type="range"
+      id="xVelAdjust"
+      name="xVelAdjust"
+      min="0"
+      max="50"
+      value="5"
+    />
+
+    <label for="yVelAdjust" style="color: white">adjust y velocity</label>
+    <input
+      type="range"
+      id="yVelAdjust"
+      name="yVelAdjust"
+      min="0"
+      max="50"
+      value="5"
+    />
+    <br>
+    <label for="heightAdjust" style="color: white">adjust height</label>
+    <input
+      type="range"
+      id="heightAdjust"
+      name="heightAdjust"
+      min="25"
+      max="300"
+      value="50"
+    />
+
+    <label for="widthAdjust" style="color: white">adjust width</label>
+    <input
+      type="range"
+      id="widthAdjust"
+      name="widthAdjust"
+      min="25"
+      max="300"
+      value="50"
+    />
+    <div id="canvasContainer">
+      <canvas id="canvas">womp womp</canvas>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+#canvasContainer {
+   width: 100%;
+   text-align: center;
+}
+canvas {
+    background-color: rgb(44, 44, 44);
+    display: inline;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
