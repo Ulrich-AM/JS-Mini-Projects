@@ -38,18 +38,18 @@ let xBlock = 15;
 
 //paddle controls
 document.addEventListener("keydown", function (event) {
-  if (event.key === "ArrowLeft") {
+  if (event.key === "ArrowLeft" || event.key === "a") {
     rghtPressed = true;
   }
-  if (event.key === "ArrowRight") {
+  if (event.key === "ArrowRight" || event.key === "d") {
     leftPressed = true;
   }
 });
 document.addEventListener("keyup", function (event) {
-  if (event.key === "ArrowLeft") {
+  if (event.key === "ArrowLeft" || event.key === "a") {
     rghtPressed = false;
   }
-  if (event.key === "ArrowRight") {
+  if (event.key === "ArrowRight" || event.key === "d") {
     leftPressed = false;
   }
 });
@@ -86,8 +86,8 @@ function update() {
 
   //gameover
   if (gameOver) {
-    context.font = "50px sans-serif";
-    context.fillText("YOU LOST", canvas.width / 2, canvas.height / 2);
+    context.font = "25px sans-serif";
+    context.fillText("YOU LOST", 165, canvas.height / 2);
     return;
   }
 
